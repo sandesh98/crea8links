@@ -6,7 +6,7 @@
                 <div class="col-lg-3 col-sm-4 col-8">
                     <!-- Logo Begin -->
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="{{ route('home.index') }}">
                             <img class="default-logo" src="img/logo.png" data-rjs="2" alt="">
                             <img class="sticky-logo" src="img/sticky_logo.png" data-rjs="2" alt="">
                         </a>
