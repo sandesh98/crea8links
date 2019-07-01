@@ -147,7 +147,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="copyright-text text-center">
-                        <span><a href="#">bizidea</a> &copy; Copyright 2019.All rights reserved.</span>
+                        <span><a href="#">{{ env('APP_NAME') }}</a> &copy; Copyright 2019.All rights reserved.</span>
                     </div>
                 </div>
             </div>

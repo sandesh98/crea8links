@@ -9,3 +9,22 @@ h1 > span {
 .single-feature:hover .content h3 {
     color: #f20117;
 }
+
+.c1, .list-check li i, .theme-input-group button, .btn.btn-white span, .vdo-btn, .section-title h3, .page-title li, .appointment-modal .modal-dialog .modal-content .form-title, .header .header-main.style--one .main-menu #menu-button, .header .header-main.style--one .main-menu .nav li.current-menu-item > a, .header .header-main.style--one .main-menu .nav li.current-menu-parent > a, .header .header-main.style--one .main-menu .nav li ul li:hover > a, .offcanvas-wrapper .offcanvas-content .widget.widget_contact_info .single-info span, .single-blog-style--two .blog-content .post-meta li a:hover, .blog-details .post-meta li a:hover, .blog-details .post-tags li a:hover, .not-found-content p a, .coming-soon-content h1, #countdown li .single-countdown h4, #countdown li.seperator, .single-feature:hover .content h3, .single-process:hover .content h3, .about-nav-tab .nav-tabs .nav-link.active, .single-service .icon, .single-service:hover h4, .service-details .title, .pricing-navtab .nav-tabs .nav-link h4, .project-nav li.active, .single-team-member .team-info h4 {
+    color: #f20117;
+}
+
+.gradient-bg, .owl-carousel button.owl-dot.active, .bg-overlay:after, .bg-hover-gradient:after, .pagination li a:after,
+.pagination li span:after, .widget.widget_tag_cloud .tagcloud a:after, .single-service.style--two:after, .pricing-navtab .nav-tabs .nav-link:after, .theme-input-group input, .btn:before, .btn:after,
+.btn span:before,
+.btn span:after, .back-to-top, -thumb.offcanvas-wrapper::-webkit-scrollbar, .coming-soon-content h1 {
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #f20018), color-stop(100%, #c90016));
+    background: -webkit-linear-gradient(45deg, #f20018 0%, #c90016 100%);
+    background: -o-linear-gradient(45deg, #f20018 0%, #c90016 100%);
+    background: linear-gradient(45deg, #f20018 0%, #c90016 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f20018', endColorstr='#c90016',GradientType=1);
+}
+
+.header .header-main.style--one .main-menu .nav {
+     margin-right: 0px;
+}

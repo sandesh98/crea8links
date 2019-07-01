@@ -12,9 +12,8 @@
 
                     <!-- Feature Content Begin -->
                     <div class="content">
-                        <h3>Best Consulting</h3>
-                        <p>Concerns greatest margaret him
-                            absolute entrance nay.</p>
+                        <h3>Beste advies</h3>
+                        <p>Aan de hand van uw behoeften geven wij advies.</p>
                     </div>
                     <!-- Feature Content End -->
                 </div>
@@ -31,9 +30,8 @@
 
                     <!-- Feature Content Begin -->
                     <div class="content">
-                        <h3>Market Research</h3>
-                        <p>Concerns greatest margaret him
-                            absolute entrance nay.</p>
+                        <h3>Marktonderzoek</h3>
+                        <p>Wij onderzoek wat voor impact jouw product op de markt gaat hebben.</p>
                     </div>
                     <!-- Feature Content End -->
                 </div>
@@ -50,9 +48,8 @@
 
                     <!-- Feature Content Begin -->
                     <div class="content">
-                        <h3>Market Growth</h3>
-                        <p>Concerns greatest margaret him
-                            absolute entrance nay.</p>
+                        <h3>Marktgroei</h3>
+                        <p>Met ons team zorgen we ervoor dat jouw product groeit in de markt.</p>
                     </div>
                     <!-- Feature Content End -->
                 </div>

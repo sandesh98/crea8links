@@ -42,7 +42,7 @@
 
                     <!-- Content Begin -->
                     <div class="content">
-                        <h3>Research</h3>
+                        <h3>Onderzoeken</h3>
                         <p>Up help home head spot an he room in.</p>
                     </div>
                     <!-- Content End -->
