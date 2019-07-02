@@ -37,7 +37,7 @@
     @include('partials.home.modal')
 
     @include('partials.home.feature')
-
+s
     @include('partials.home.about')
 
     <!-- Work Process Begin -->
@@ -270,11 +270,11 @@
     </section>
     <!-- Counter End -->
 
-    {{--@include('partials.home.pricing')--}}
+    @include('partials.home.pricing')
 
-    {{--@include('partials.home.projects')--}}
+    @include('partials.home.projects')
 
-    {{--@include('partials.home.team')--}}
+    @include('partials.home.team')
 
     @include('partials.home.brandslider')
 @endsection
