@@ -1,4 +1,4 @@
-<section class="pt-120 pb-70 section-pattern" data-bg-img="img/section-pattern/work-process-pattern.png">
+<section class="pt-120 pb-70 section-pattern" data-bg-img="{{ asset('img/section-pattern/work-process-pattern.png') }}">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -18,7 +18,7 @@
                 <div class="single-process text-center">
                     <!-- Image Begin -->
                     <div class="image">
-                        <img src="img/process/process-1.png" data-rjs="2" alt="">
+                        <img src="{{ asset('img/process/process-1.png') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Image End -->
 
@@ -36,7 +36,7 @@
                 <div class="single-process text-center">
                     <!-- Image Begin -->
                     <div class="image">
-                        <img src="img/process/process-2.png" data-rjs="2" alt="">
+                        <img src="{{ asset('img/process/process-2.png') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Image End -->
 
@@ -54,7 +54,7 @@
                 <div class="single-process text-center">
                     <!-- Image Begin -->
                     <div class="image">
-                        <img src="img/process/process-3.png" data-rjs="2" alt="">
+                        <img src="{{ asset('img/process/process-3.png') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Image End -->
 
@@ -72,7 +72,7 @@
                 <div class="single-process text-center">
                     <!-- Image Begin -->
                     <div class="image">
-                        <img src="img/process/process-4.png" data-rjs="2" alt="">
+                        <img src="{{ asset('img/process/process-4.png') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Image End -->
 

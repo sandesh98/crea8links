@@ -7,8 +7,8 @@
                     <!-- Logo Begin -->
                     <div class="logo">
                         <a href="{{ route('home.index') }}">
-                            <img class="default-logo" src="img/logo.png" data-rjs="2" alt="">
-                            <img class="sticky-logo" src="img/sticky_logo.png" data-rjs="2" alt="">
+                            <img class="default-logo" src="{{ asset('img/logo.png') }}" data-rjs="2" alt="">
+                            <img class="sticky-logo" src="{{ asset('img/sticky_logo.png') }}" data-rjs="2" alt="">
                         </a>
                     </div>
                     <!-- Logo End -->
@@ -26,10 +26,6 @@
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="#">Projecten</a>
-                                <ul class="sub-menu">
-                                    <li><a href="projects.html">Projects</a></li>
-                                    <li><a href="project-details.html">project details</a></li>
-                                </ul>
                             </li>
                             <li class="{{ Route::is('contact.index') ? 'current-menu-parent' : '' }}">
                                 <a href="{{ route('contact.index') }}">Contact</a>

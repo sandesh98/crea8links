@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Page Title Begin -->
-    <section class="page-title-bg pt-250 pb-100" data-bg-img="img/section-pattern/page-title.png">
+    <section class="page-title-bg pt-250 pb-100" data-bg-img="{{ asset('img/section-pattern/page-title.png') }}">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -49,7 +49,7 @@
                     <!-- About Feature List End -->
                 </div>
                 <div class="col-lg-6 mt-50 mt-lg-0">
-                    <img src="img/serviec-1.jpg" data-rjs="2" alt="">
+                    <img src="{{ asset('img/serviec-1.jpg') }}" data-rjs="2" alt="">
                 </div>
             </div>
         </div>
@@ -81,7 +81,7 @@
                     <div class="single-service style--three text-center">
                         <!-- Icon Begin -->
                         <div class="icon">
-                            <img src="img/icons/service-1.png" data-rjs="2" alt="">
+                            <img src="{{ asset('img/icons/service-1.png') }}" data-rjs="2" alt="">
                         </div>
                         <!-- Icon End  -->
 
@@ -100,7 +100,7 @@
                     <div class="single-service style--three text-center">
                         <!-- Icon Begin -->
                         <div class="icon">
-                            <img src="img/icons/service-2.png" data-rjs="2" alt="">
+                            <img src="{{ asset('img/icons/service-2.png') }}" data-rjs="2" alt="">
                         </div>
                         <!-- Icon End  -->
 
@@ -119,7 +119,7 @@
                     <div class="single-service style--three text-center">
                         <!-- Icon Begin -->
                         <div class="icon">
-                            <img src="img/icons/service-3.png" data-rjs="2" alt="">
+                            <img src="{{ asset('img/icons/service-3.png') }}" data-rjs="2" alt="">
                         </div>
                         <!-- Icon End  -->
 
@@ -138,7 +138,7 @@
                     <div class="single-service style--three text-center">
                         <!-- Icon Begin -->
                         <div class="icon">
-                            <img src="img/icons/service-4.png" data-rjs="2" alt="">
+                            <img src="{{ asset('img/icons/service-4.png') }}" data-rjs="2" alt="">
                         </div>
                         <!-- Icon End  -->
 
@@ -157,7 +157,7 @@
                     <div class="single-service style--three text-center">
                         <!-- Icon Begin -->
                         <div class="icon">
-                            <img src="img/icons/service-5.png" data-rjs="2" alt="">
+                            <img src="{{ asset('img/icons/service-5.png') }}" data-rjs="2" alt="">
                         </div>
                         <!-- Icon End  -->
 
@@ -176,7 +176,7 @@
                     <div class="single-service style--three text-center">
                         <!-- Icon Begin -->
                         <div class="icon">
-                            <img src="img/icons/service-6.png" data-rjs="2" alt="">
+                            <img src="{{ asset('img/icons/service-6.png') }}" data-rjs="2" alt="">
                         </div>
                         <!-- Icon End  -->
 
@@ -240,7 +240,7 @@
     <!-- Counter End -->
 
     <!-- Testimonial Begin -->
-    <section class="pt-120 pb-120 section-pattern" data-bg-img="img/section-pattern/testimonial-pattern.png">
+    <section class="pt-120 pb-120 section-pattern" data-bg-img="{{ asset('img/section-pattern/testimonial-pattern.png') }}">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -265,7 +265,7 @@
                         <div class="col-md-5">
                             <!-- Testimonial Image Begin -->
                             <div class="testimonial-image mb-50 mb-md-0">
-                                <img src="img/testimonial/testimonial-author-1.png" data-rjs="2" alt="">
+                                <img src="{{ asset('img/testimonial/testimonial-autho') }}r-1.png" data-rjs="2" alt="">
                             </div>
                             <!-- Testimonial Image End -->
                         </div>
@@ -292,7 +292,7 @@
                         <div class="col-md-5">
                             <!-- Testimonial Image Begin -->
                             <div class="testimonial-image mb-50 mb-md-0">
-                                <img src="img/testimonial/testimonial-2.png" data-rjs="2" alt="">
+                                <img src="{{ asset('img/testimonial/testimonial-2.png') }}" data-rjs="2" alt="">
                             </div>
                             <!-- Testimonial Image End -->
                         </div>
@@ -319,7 +319,7 @@
                         <div class="col-md-5">
                             <!-- Testimonial Image Begin -->
                             <div class="testimonial-image mb-50 mb-md-0">
-                                <img src="img/testimonial/testimonial-3.png" data-rjs="2" alt="">
+                                <img src="{{ asset('img/testimonial/testimonial-3.png') }}" data-rjs="2" alt="">
                             </div>
                             <!-- Testimonial Image End -->
                         </div>
@@ -355,37 +355,37 @@
                          data-owl-responsive='{"0": {"items": "2"},"575":{"items": "3"},"768": {"items": "4"},"992": {"items": "6"}}'>
                         <!-- Single Partner -->
                         <a href="#" class="single-brand-logo">
-                            <img src="img/brand/brand-1.png" data-rjs="2" alt="">
+                            <img src="{{ asset('img/brand/brand-1.png') }}" data-rjs="2" alt="">
                         </a>
                         <!-- End Single Partner -->
 
                         <!-- Single Partner -->
                         <a href="#" class="single-brand-logo">
-                            <img src="img/brand/brand-2.png" data-rjs="2" alt="">
+                            <img src="{{ asset('img/brand/brand-2.png') }}" data-rjs="2" alt="">
                         </a>
                         <!-- End Single Partner -->
 
                         <!-- Single Partner -->
                         <a href="#" class="single-brand-logo">
-                            <img src="img/brand/brand-3.png" data-rjs="2" alt="">
+                            <img src="{{ asset('img/brand/brand-3.png') }}" data-rjs="2" alt="">
                         </a>
                         <!-- End Single Partner -->
 
                         <!-- Single Partner -->
                         <a href="#" class="single-brand-logo">
-                            <img src="img/brand/brand-4.png" data-rjs="2" alt="">
+                            <img src="{{ asset('img/brand/brand-4.png') }}" data-rjs="2" alt="">
                         </a>
                         <!-- End Single Partner -->
 
                         <!-- Single Partner -->
                         <a href="#" class="single-brand-logo">
-                            <img src="img/brand/brand-5.png" data-rjs="2" alt="">
+                            <img src="{{ asset('img/brand/brand-5.png') }}" data-rjs="2" alt="">
                         </a>
                         <!-- End Single Partner -->
 
                         <!-- Single Partner -->
                         <a href="#" class="single-brand-logo">
-                            <img src="img/brand/brand-6.png" data-rjs="2" alt="">
+                            <img src="{{ asset('img/brand/brand-6.png') }}" data-rjs="2" alt="">
                         </a>
                         <!-- End Single Partner -->
 

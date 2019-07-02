@@ -1,4 +1,4 @@
-<section class="pt-120 pb-90 section-pattern" data-bg-img="img/section-pattern/feature-pattern.png">
+<section class="pt-120 pb-90 section-pattern" data-bg-img="{{ asset('img/section-pattern/feature-pattern.png') }}">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6">
@@ -6,7 +6,7 @@
                 <div class="single-feature text-center">
                     <!-- Feature Image Begin -->
                     <div class="image">
-                        <img src="img/feature/feature-1.png" data-rjs="2" alt="">
+                        <img src="{{ asset('img/feature/feature-1.png') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Feature Image End -->
 
@@ -24,7 +24,7 @@
                 <div class="single-feature text-center">
                     <!-- Feature Image Begin -->
                     <div class="image">
-                        <img src="img/feature/feature-2.png" data-rjs="2" alt="">
+                        <img src="{{ asset('img/feature/feature-2.png') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Feature Image End -->
 
@@ -42,7 +42,7 @@
                 <div class="single-feature text-center">
                     <!-- Feature Image Begin -->
                     <div class="image">
-                        <img src="img/feature/feature-3.png" data-rjs="2" alt="">
+                        <img src="{{ asset('img/feature/feature-3.png') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Feature Image End -->
 

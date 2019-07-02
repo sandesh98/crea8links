@@ -8,7 +8,7 @@
                     <div class="modal-content">
                         <!-- Modal Close Button Begin -->
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <img src="img/icons/close.svg" alt="">
+                            <img src="{{ asset('img/icons/close.svg') }}" alt="">
                         </button>
                         <!-- End Modal Close End -->
 

@@ -1,4 +1,4 @@
-<section class="pt-120 pb-90 section-pattern" data-bg-img="img/section-pattern/case-study-pattern.png">
+<section class="pt-120 pb-90 section-pattern" data-bg-img="{{ asset('img/section-pattern/case-study-pattern.png') }}">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -51,7 +51,7 @@
                 <div class="single-project-item">
                     <!-- Project Image Begin -->
                     <div class="image">
-                        <img src="img/project/project-1.png" data-rjs="2" alt="">
+                        <img src="{{ asset('img/project/project-1.png') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Project Image End -->
 
@@ -74,7 +74,7 @@
                 <div class="single-project-item">
                     <!-- Project Image Begin -->
                     <div class="image">
-                        <img src="img/project/project-2.png" data-rjs="2" alt="">
+                        <img src="{{ asset('img/project/project-2.png') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Project Image End -->
 
@@ -97,7 +97,7 @@
                 <div class="single-project-item">
                     <!-- Project Image Begin -->
                     <div class="image">
-                        <img src="img/project/project-3.png" data-rjs="2" alt="">
+                        <img src="{{ asset('img/project/project-3.png') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Project Image End -->
 
@@ -120,7 +120,7 @@
                 <div class="single-project-item">
                     <!-- Project Image Begin -->
                     <div class="image">
-                        <img src="img/project/project-4.png" data-rjs="2" alt="">
+                        <img src="{{ asset('img/project/project-4.png') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Project Image End -->
 

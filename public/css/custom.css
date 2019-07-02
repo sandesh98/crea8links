@@ -49,3 +49,7 @@ h1 > span {
 .header .header-main.style--one .main-menu .nav > li > a:hover {
     color: #f20117;
 }
+
+.preloader .loader:before {
+    border: 1px solid #f20117;
+}

@@ -37,7 +37,7 @@
     @include('partials.home.modal')
 
     @include('partials.home.feature')
-s
+
     @include('partials.home.about')
 
     <!-- Work Process Begin -->

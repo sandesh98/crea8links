@@ -1,4 +1,4 @@
-<section class="pt-120 pb-70 section-pattern" data-bg-img="img/section-pattern/testimonial-pattern.png">
+<section class="pt-120 pb-70 section-pattern" data-bg-img="{{ asset('img/section-pattern/testimonial-pattern.png') }}">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -20,8 +20,8 @@
                 <div class="single-team-member">
                     <!-- Team Image Begin -->
                     <div class="image position-relative">
-                        <img src="img/shapes/team.svg" class="svg" alt="">
-                        <img src="img/team/team-1.jpg" data-rjs="2" alt="">
+                        <img src="{{ asset('img/shapes/team.svg') }}" class="svg" alt="">
+                        <img src="{{ asset('img/team/team-1.jpg') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Team Image End -->
 
@@ -58,8 +58,8 @@
                 <div class="single-team-member">
                     <!-- Team Image Begin -->
                     <div class="image position-relative">
-                        <img src="img/shapes/team.svg" class="svg" alt="">
-                        <img src="img/team/team-2.jpg" data-rjs="2" alt="">
+                        <img src="{{ asset('img/shapes/team.svg') }}" class="svg" alt="">
+                        <img src="{{ asset('img/team/team-2.jpg') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Team Image End -->
 
@@ -97,8 +97,8 @@
                 <div class="single-team-member">
                     <!-- Team Image Begin -->
                     <div class="image position-relative">
-                        <img src="img/shapes/team.svg" class="svg" alt="">
-                        <img src="img/team/team-3.jpg" data-rjs="2" alt="">
+                        <img src="{{ asset('img/shapes/team.svg') }}" class="svg" alt="">
+                        <img src="{{ asset('img/team/team-3.jpg') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Team Image End -->
 
@@ -136,8 +136,8 @@
                 <div class="single-team-member">
                     <!-- Team Image Begin -->
                     <div class="image position-relative">
-                        <img src="img/shapes/team.svg" class="svg" alt="">
-                        <img src="img/team/team-4.jpg" data-rjs="2" alt="">
+                        <img src="{{ asset('img/shapes/team.svg') }}" class="svg" alt="">
+                        <img src="{{ asset('img/team/team-4.jpg') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Team Image End -->
 
@@ -175,8 +175,8 @@
                 <div class="single-team-member">
                     <!-- Team Image Begin -->
                     <div class="image position-relative">
-                        <img src="img/shapes/team.svg" class="svg" alt="">
-                        <img src="img/team/team-5.jpg" data-rjs="2" alt="">
+                        <img src="{{ asset('img/shapes/team.svg') }}" class="svg" alt="">
+                        <img src="{{ asset('img/team/team-5.jpg') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Team Image End -->
 
@@ -214,8 +214,8 @@
                 <div class="single-team-member">
                     <!-- Team Image Begin -->
                     <div class="image position-relative">
-                        <img src="img/shapes/team.svg" class="svg" alt="">
-                        <img src="img/team/team-6.jpg" data-rjs="2" alt="">
+                        <img src="{{ asset('img/shapes/team.svg') }}" class="svg" alt="">
+                        <img src="{{ asset('img/team/team-6.jpg') }}" data-rjs="2" alt="">
                     </div>
                     <!-- Team Image End -->
 

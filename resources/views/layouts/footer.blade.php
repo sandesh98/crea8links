@@ -1,5 +1,5 @@
 <footer class="footer bg-light section-pattern footer-bg"
-        data-bg-img="img/section-pattern/footer-pattern.png">
+        data-bg-img="{{ asset('img/section-pattern/footer-pattern.png') }}">
     <!-- Footer Top Begin -->
     <div class="footer-top pt-60">
         <div class="container border-bottom">
@@ -9,7 +9,7 @@
                     <div class="widget widget_contact_info">
                         <!-- Widget Logo Begin -->
                         <div class="widget-logo">
-                            <img src="img/footer_logo.png" data-rjs="2" alt="">
+                            <img src="{{ asset('img/footer_logo.png') }}" data-rjs="2" alt="">
                         </div>
                         <!-- Widget Logo End -->
 
@@ -47,7 +47,7 @@
                         <!-- Single Latest Post Begin -->
                         <div class="single-post media">
                             <div class="post-image">
-                                <img src="img/blog/recent-post.png" data-rjs="2" alt="">
+                                <img src="{{ asset('img/blog/recent-post.png') }}" data-rjs="2" alt="">
                             </div>
                             <div class="post-content media-body">
                                 <span class="posted-on">18 Feb, 2019</span>
@@ -59,7 +59,7 @@
                         <!-- Single Latest Post Begin -->
                         <div class="single-post media">
                             <div class="post-image">
-                                <img src="img/blog/recent-post.png" data-rjs="2" alt="">
+                                <img src="{{ asset('img/blog/recent-post.png') }}" data-rjs="2" alt="">
                             </div>
                             <div class="post-content media-body">
                                 <span class="posted-on">18 Feb, 2019</span>
