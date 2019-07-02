@@ -60,7 +60,7 @@
 
                     <!-- Content Begin -->
                     <div class="content">
-                        <h3>Dealing</h3>
+                        <h3>Onderhandel</h3>
                         <p>Imprudence attachment him his for sympathize.</p>
                     </div>
                     <!-- Content End -->

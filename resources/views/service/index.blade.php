@@ -7,9 +7,9 @@
             <div class="row">
                 <div class="col-12">
                     <div class="page-title text-center">
-                        <h2>Services</h2>
+                        <h2>Diensten</h2>
                         <ul class="list-inline">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="{{ route('home.index') }}">Home</a></li>
                             <li>Services</li>
                         </ul>
                     </div>
@@ -26,7 +26,7 @@
                 <div class="col-lg-6">
                     <!-- Section Title Begin -->
                     <div class="section-title mb-4">
-                        <h3>What we offer</h3>
+                        <h3>Wat wij bieden</h3>
                         <h2>Wide Range of Result
                             Oriented Leadership
                             Support Services</h2>

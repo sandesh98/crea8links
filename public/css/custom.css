@@ -26,5 +26,13 @@ h1 > span {
 }
 
 .header .header-main.style--one .main-menu .nav {
-     margin-right: 0px;
+     margin-right: -17px;
+}
+
+.page-title:hover li a {
+    color: #f20117;
+}
+
+.header .header-main.style--one .main-menu .nav > li > a:hover {
+    color: #f20117;
 }
