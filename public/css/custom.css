@@ -1,3 +1,10 @@
+::selection {
+    background: #f20117; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: #f20117; /* Gecko Browsers */
+}
+
 h1 > span {
     color: #f20117;
 }
@@ -31,6 +38,12 @@ h1 > span {
 
 .page-title:hover li a {
     color: #f20117;
+}
+
+.btn {
+    color: white !important;
+    background-color: #f20117 !important;
+
 }
 
 .header .header-main.style--one .main-menu .nav > li > a:hover {

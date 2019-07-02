@@ -10,7 +10,7 @@
                         <h2>Diensten</h2>
                         <ul class="list-inline">
                             <li><a href="{{ route('home.index') }}">Home</a></li>
-                            <li>Services</li>
+                            <li>Diensten</li>
                         </ul>
                     </div>
                 </div>

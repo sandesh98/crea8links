@@ -25,7 +25,7 @@
                     <!-- Content Begin -->
                     <div class="content">
                         <h3>Planning</h3>
-                        <p>He improve started no we manners however effects.</p>
+                        <p>Gezamenlijk zullen we plannen zodat product op tijd worden opgeleverd.</p>
                     </div>
                     <!-- Content End -->
                 </div>
@@ -43,7 +43,7 @@
                     <!-- Content Begin -->
                     <div class="content">
                         <h3>Onderzoeken</h3>
-                        <p>Up help home head spot an he room in.</p>
+                        <p>We zullen onderzoeken wat de markt wil.</p>
                     </div>
                     <!-- Content End -->
                 </div>
@@ -61,7 +61,7 @@
                     <!-- Content Begin -->
                     <div class="content">
                         <h3>Onderhandel</h3>
-                        <p>Imprudence attachment him his for sympathize.</p>
+                        <p>Onderhandelend zorgen we ervoor dat iedereen de beste prijs heeft.</p>
                     </div>
                     <!-- Content End -->
                 </div>
@@ -79,7 +79,7 @@
                     <!-- Content Begin -->
                     <div class="content">
                         <h3>Consultancy</h3>
-                        <p>He improve started no we manners however effects.</p>
+                        <p>Wij zullen onze expertise in alle producten verwerken.</p>
                     </div>
                     <!-- Content End -->
                 </div>
