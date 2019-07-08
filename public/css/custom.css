@@ -61,3 +61,16 @@ h1 > span {
 .btn-inline:hover {
     color: #f20117;
 }
+
+.project-meta li a:hover {
+    color: #f20117;
+}
+
+.media-body a:hover {
+    color: #f20117;
+}
+
+.post-pagination .single-post-pagination .media-body a:hover path {
+    fill: currentColor;
+}
+

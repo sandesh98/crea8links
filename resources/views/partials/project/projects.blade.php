@@ -57,13 +57,13 @@
 
                     <!-- Project Body Begin -->
                     <div class="project-body">
-                        <h3><a href="#">Business consultant finds more ways to bring business to light</a></h3>
+                        <h3><a href="{{ route('project.example') }}">Voorbeeld project</a></h3>
                         <p class="project-meta">Client:<span>Alto Palermo S.A.</span></p>
                         <p>Imprudence attachment him his for sympathize. Large above be to means. Dashwood do
                             provided
                             stronger is. But discretion
                             frequently.</p>
-                        <a href="#" class="btn-inline">Read More</a>
+                        <a href="{{ route('project.example') }}" class="btn-inline">Read More</a>
                     </div>
                     <!-- Project Body End -->
                 </div>
