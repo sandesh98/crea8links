@@ -24,8 +24,8 @@
                             <li class="{{ Route::is('service.index') ? 'current-menu-parent' : '' }}">
                                 <a href="{{ route('service.index') }}">Diensten</a>
                             </li>
-                            <li class="menu-item-has-children">
-                                <a href="#">Projecten</a>
+                            <li class="{{ route::is('project.index') ? 'current-menu-parent' : '' }}">
+                                <a href="{{ route('project.index') }}">Projecten</a>
                             </li>
                             <li class="{{ Route::is('contact.index') ? 'current-menu-parent' : '' }}">
                                 <a href="{{ route('contact.index') }}">Contact</a>

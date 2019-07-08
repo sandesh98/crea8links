@@ -13,4 +13,5 @@
 
 Route::get('/', 'HomeController@index')->name('home.index');
 Route::get('/contact', 'ContactController@index')->name('contact.index');
-Route::get('/service' , 'ServiceController@index')->name('service.index');
+Route::get('/diensten' , 'ServiceController@index')->name('service.index');
+Route::get('/projecten', 'ProjectController@index')->name('project.index');

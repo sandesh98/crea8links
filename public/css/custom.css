@@ -1,6 +1,7 @@
 ::selection {
     background: #f20117; /* WebKit/Blink Browsers */
 }
+
 ::-moz-selection {
     background: #f20117; /* Gecko Browsers */
 }
@@ -29,11 +30,11 @@ h1 > span {
     background: -webkit-linear-gradient(45deg, #f20018 0%, #c90016 100%);
     background: -o-linear-gradient(45deg, #f20018 0%, #c90016 100%);
     background: linear-gradient(45deg, #f20018 0%, #c90016 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f20018', endColorstr='#c90016',GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f20018', endColorstr='#c90016', GradientType=1);
 }
 
 .header .header-main.style--one .main-menu .nav {
-     margin-right: -17px;
+    margin-right: -17px;
 }
 
 .page-title:hover li a {
@@ -43,7 +44,6 @@ h1 > span {
 .btn {
     color: white !important;
     background-color: #f20117 !important;
-
 }
 
 .header .header-main.style--one .main-menu .nav > li > a:hover {
@@ -52,4 +52,12 @@ h1 > span {
 
 .preloader .loader:before {
     border: 1px solid #f20117;
+}
+
+.project-body h3 a:hover {
+    color: #f20117;
+}
+
+.btn-inline:hover {
+    color: #f20117;
 }
