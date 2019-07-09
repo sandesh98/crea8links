@@ -17,13 +17,13 @@
                             @csrf
                             <h2 class="form-title">Afspraak maken</h2>
 
-                            <input class="theme-input-style position-relative" style="z-index: 99999;" id="name" name="name" type="text" placeholder="Naam">
+                            <input class="theme-input-style position-relative" style="z-index: 9999999;" id="name" name="name" type="text" placeholder="Naam">
 
-                            <input class="theme-input-style position-relative" style="z-index: 99999;" id="email" name="email" type="email" placeholder="Email">
+                            <input class="theme-input-style position-relative" style="z-index: 9999999;" id="email" name="email" type="email" placeholder="Email">
 
-                            <input class="theme-input-style position-relative" style="z-index: 99999;" id="phone" name="phone" type="tel" placeholder="Telefoonnummer">
+                            <input class="theme-input-style position-relative" style="z-index: 9999999;" id="phone" name="phone" type="tel" placeholder="Telefoonnummer">
 
-                            <select class="theme-input-style position-relative  style="z-index99999" clearfix" name="purpose" id="purpose">
+                            <select class="theme-input-style position-relative" style="z-index: 9999999;" name="purpose" id="purpose">
                                 <option value="" selected="" disabled="">Kies een optie</option>
                                 @foreach(\App\Notification::getEnumValues() as $purpose)
                                     <option value="{{ $purpose }}">{{ ucfirst($purpose) }}</option>
@@ -31,7 +31,7 @@
 
                             </select>
 
-                            <textarea class="theme-input-style position-relative" style="z-index: 99999;" id="message" name="message" placeholder="Bericht..."></textarea>
+                            <textarea class="theme-input-style position-relative" style="z-index: 9999999;" id="message" name="message" placeholder="Bericht..."></textarea>
 
                             <button class="btn" id="submit" type="submit"><span>Verzenden</span></button>
                         </form>
