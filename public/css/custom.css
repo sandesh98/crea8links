@@ -74,3 +74,14 @@ h1 > span {
     fill: currentColor;
 }
 
+.is-invalid + .invalid-feedback {
+    display: inline-block;
+    position: absolute;
+    left: 60px;
+    padding-top: 50px;
+}
+
+.test {
+
+}
+

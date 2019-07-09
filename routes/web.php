@@ -17,3 +17,5 @@ Route::get('/diensten' , 'ServiceController@index')->name('service.index');
 
 Route::get('/projecten', 'ProjectController@index')->name('project.index');
 Route::get('/projecten/example', 'ProjectController@example')->name('project.example');
+
+Route::post('/', 'NotificationsController@store')->name('notification.store');
