@@ -17,7 +17,7 @@ class CreateNotificationsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email');
-            $table->string('phone');
+            $table->string('phone')->nullable();
             $table->enum('purpose', ['Zakelijk', 'Particulier']);
             $table->text('message');
             $table->timestamps();
