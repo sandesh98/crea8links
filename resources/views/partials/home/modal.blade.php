@@ -13,7 +13,7 @@
                         <!-- End Modal Close End -->
 
                         <!-- Appointment Form Begin -->
-                        <form action="{{ route('notification.store') }}" method="POST" class="appointment-form">
+                        <form action="{{ route('notification.store') }}" method="POST" class="appointment-form" id="appointment">
                             @csrf
                             <h2 class="form-title">Afspraak maken</h2>
 
@@ -24,14 +24,14 @@
                             <input class="theme-input-style position-relative" style="z-index: 9999999;" id="phone" name="phone" type="tel" placeholder="Telefoonnummer">
 
                             <select class="theme-input-style position-relative" style="z-index: 9999999;" name="purpose" id="purpose">
-                                <option value="" selected="" disabled="">Kies een optie</option>
+                                <option value="" disabled="">Kies een optie</option>
                                 @foreach(\App\Notification::getEnumValues() as $purpose)
-                                    <option value="{{ $purpose }}">{{ ucfirst($purpose) }}</option>
+                                    <option value="{{ $purpose }}" selected>{{ ucfirst($purpose) }}</option>
                                 @endforeach
 
                             </select>
 
-                            <textarea class="theme-input-style position-relative" style="z-index: 9999999;" id="message" name="message" placeholder="Bericht..."></textarea>
+                            <textarea class="theme-input-style position-relative" style="z-index: 9999999;" id="message" name="message" placeholder="Bericht...">Bericht komt hier</textarea>
 
                             <button class="btn" id="submit" type="submit"><span>Verzenden</span></button>
                         </form>
@@ -76,7 +76,10 @@
                         message: message
                     },
                     success: function (data) {
-                        console.log(data);
+                        $('#appointment')[0].reset();
+
+                        $('#submit').after('<h3 class="text-center pt-3">' + data + '</h3>')
+                            .attr('disabled', true);
                     },
                     error: function (data) {
                         const errors = data.responseJSON.errors;

@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\AppointmentReceived;
 use App\Notification;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class NotificationsController extends Controller
 {
@@ -17,8 +19,10 @@ class NotificationsController extends Controller
             'message' => 'required'
         ]);
 
-        Notification::create($request->all());
+        $notifaction = Notification::create($request->all());
 
-        return response()->json(200);
+        Mail::to('sandeshb981@gmail.com')->send(new AppointmentReceived($notifaction));
+
+        return response()->json('Bericht verzonden!', 200);
     }
 }
