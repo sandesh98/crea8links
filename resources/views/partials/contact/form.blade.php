@@ -169,6 +169,11 @@
                             $('.contact-form textarea[name="' + key + '"]').addClass('is-invalid')
                                 .after('<div class="invalid-feedback">' + value[0] + '</div>');
                             // console.log(value);
+
+                             $("input, textarea").focus(function(){
+                                $(this).next('div').remove();
+                                $(this).removeClass('is-invalid');
+                            });
                         })
                     }
                 });
