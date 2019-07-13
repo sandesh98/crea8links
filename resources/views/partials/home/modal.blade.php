@@ -17,21 +17,25 @@
                             @csrf
                             <h2 class="form-title">Afspraak maken</h2>
 
-                            <input class="theme-input-style position-relative" style="z-index: 9999999;" id="name" name="name" type="text" placeholder="Naam">
+                            <div class="mb-4">
+                                <input class="form-control rounded-0" style="height: 50px;" id="name" name="name" type="text" placeholder="Naam">
+                            </div>
 
-                            <input class="theme-input-style position-relative" style="z-index: 9999999;" id="email" name="email" type="email" placeholder="Email">
+                            <div class="mb-4">
+                                <input class="form-control rounded-0" style="height: 50px;" id="email" name="email" type="email" placeholder="Email">
+                            </div>
 
-                            <input class="theme-input-style position-relative" style="z-index: 9999999;" id="phone" name="phone" type="tel" placeholder="Telefoonnummer">
+                            <div class="mb-4">
+                                <input class="form-control rounded-0" style="height: 50px;" id="phone" name="phone" type="tel" placeholder="Telefoonnummer">
+                            </div>
 
-                            <select class="theme-input-style position-relative" style="z-index: 9999999;" name="purpose" id="purpose">
-                                <option value="" disabled="">Kies een optie</option>
-                                @foreach(\App\Notification::getEnumValues() as $purpose)
-                                    <option value="{{ $purpose }}" selected>{{ ucfirst($purpose) }}</option>
-                                @endforeach
+                            <div class="mb-4">
+                                <input class="form-control rounded-0" style="height: 50px;" id="company" name="company" type="text" placeholder="Bedrijfsnaam">
+                            </div>
 
-                            </select>
-
-                            <textarea class="theme-input-style position-relative" style="z-index: 9999999;" id="message" name="message" placeholder="Bericht...">Bericht komt hier</textarea>
+                            <div class="mb-4">
+                                <textarea class="form-control rounded-0" id="message" name="message" placeholder="Bericht..." rows="4"></textarea>
+                            </div>
 
                             <button class="btn" id="submit" type="submit"><span>Verzenden</span></button>
                         </form>
@@ -60,7 +64,7 @@
                 const name = $('#name').val();
                 const email = $('#email').val();
                 const phone = $('#phone').val();
-                const purpose = $('#purpose').val();
+                const company = $('#company').val();
                 const message = $('#message').val();
 
                 $.ajax({
@@ -72,8 +76,9 @@
                         name: name,
                         email: email,
                         phone: phone,
-                        purpose: purpose,
-                        message: message
+                        company: company,
+                        message: message,
+                        sort: 'homepage'
                     },
                     success: function (data) {
                         $('#appointment')[0].reset();
@@ -86,13 +91,15 @@
                         // console.log(errors);
                         $.each(errors, function (key, value) {
                             // debugger;
+                            if ($('#' + key).hasClass('is-invalid')) {
+                                return false;
+                            }
                             $('.appointment-form input[name="' + key + '"]').addClass('is-invalid')
                                 .after('<div class="invalid-feedback">' + value[0] + '</div>');
-                            $('.appointment-form select[name="' + key + '"]').addClass('is-invalid')
-                                .after('<div class="invalid-feedback">' + value[0] + '</div>');
+
                             $('.appointment-form textarea[name="' + key + '"]').addClass('is-invalid')
-                                .after('<div class="invalid-feedback" style="padding-top: 200px;">' + value[0] + '</div>');
-                            console.log(value);
+                                .after('<div class="invalid-feedback">' + value[0] + '</div>');
+                            // console.log(value);
                         })
                     }
                 });

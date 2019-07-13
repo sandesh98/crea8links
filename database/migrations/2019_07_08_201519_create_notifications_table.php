@@ -18,8 +18,9 @@ class CreateNotificationsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone')->nullable();
-            $table->enum('purpose', ['Zakelijk', 'Particulier']);
+            $table->string('company')->nullable();
             $table->text('message');
+            $table->enum('sort', ['homepage', 'contact']);
             $table->timestamps();
         });
     }

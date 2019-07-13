@@ -15,13 +15,14 @@ class NotificationsController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'phone' => 'present',
-            'purpose' => 'required',
-            'message' => 'required'
+            'message' => 'required',
+            'company' => 'nullable',
+            'sort' => 'required'
         ]);
 
-        $notifaction = Notification::create($request->all());
+        $notification = Notification::create($request->all());
 
-        Mail::to('sandeshb981@gmail.com')->send(new AppointmentReceived($notifaction));
+        Mail::to('sandeshb981@gmail.com')->send(new AppointmentReceived($notification));
 
         return response()->json('Bericht verzonden!', 200);
     }

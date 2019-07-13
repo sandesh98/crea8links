@@ -74,27 +74,38 @@
                     <p>Our believe has request not how comfort evident. Up delight cousins we feeling
                         minutes. Genius has looked end piqued spring. Down has rose feel find man.</p>
 
-                    <form method="POST" action="sendmail.php" class="contact-form">
+                    <form method="POST" action="{{ route('notification.store') }}" class="contact-form">
+                        @csrf
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" name="name" class="theme-input-style" placeholder="Naam" required>
+                                <div class="mb-4">
+                                    <input type="text" id="name" name="name" class="form-control rounded-0" style="height: 50px;" placeholder="Naam">
+                                </div>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" name="email" class="theme-input-style" placeholder="Email adres" required>
+                                <div class="mb-4">
+                                    <input type="email" id="email" name="email" class="form-control rounded-0" style="height: 50px;" placeholder="Email adres">
+                                </div>
                             </div>
                             <div class="col-md-6">
-                                <input type="text" name="company" class="theme-input-style" placeholder="Bedrijf">
+                                <div class="mb-4">
+                                    <input type="text" id="company" name="company" class="form-control rounded-0" style="height: 50px;" placeholder="Bedrijf">
+                                </div>
                             </div>
                             <div class="col-md-6">
-                                <input type="tel" name="phone" class="theme-input-style" placeholder="Telefoonnummer">
+                                <div class="mb-4">
+                                    <input type="tel" id="phone" name="phone" class="form-control rounded-0" style="height: 50px;" placeholder="Telefoonnummer">
+                                </div>
                             </div>
 
                             <div class="col-12">
-                                <textarea name="message" class="theme-input-style" required></textarea>
+                                <div class="mb-4">
+                                    <textarea name="message" id="message" class="form-control rounded-0" rows="4" placeholder="Bericht..."></textarea>
+                                </div>
                             </div>
 
                             <div class="col-12">
-                                <button type="submit" class="btn"><span>Versturen</span></button>
+                                <button type="submit" id="submit" class="btn"><span>Versturen</span></button>
                             </div>
                         </div>
                         <div class="form-response"></div>
@@ -105,3 +116,64 @@
         </div>
     </div>
 </section>
+
+@push('scripts')
+    <script>
+        $(document).ready(function () {
+            $('#submit').click(function (e) {
+
+                e.preventDefault();
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+
+                const name = $('#name').val();
+                const email = $('#email').val();
+                const phone = $('#phone').val();
+                const company = $('#company').val();
+                const message = $('#message').val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "{{ route('notification.store') }}",
+                    dataType: "json",
+                    data: {
+                        _token: "{{ csrf_token() }}",
+                        name: name,
+                        email: email,
+                        phone: phone,
+                        company: company,
+                        message: message,
+                        sort: 'contact'
+                    },
+                    success: function (data) {
+                        $('.contact-form')[0].reset();
+
+                        $('#submit').after('<h3 class="text-center pt-3">' + data + '</h3>')
+                            .attr('disabled', true);
+                    },
+                    error: function (data) {
+                        const errors = data.responseJSON.errors;
+                        // console.log(errors);
+                        $.each(errors, function (key, value) {
+                            // debugger;
+                            if ($('#' + key).hasClass('is-invalid')) {
+                                return false;
+                            }
+                            $('.contact-form input[name="' + key + '"]').addClass('is-invalid')
+                                .after('<div class="invalid-feedback">' + value[0] + '</div>');
+
+                            $('.contact-form textarea[name="' + key + '"]').addClass('is-invalid')
+                                .after('<div class="invalid-feedback">' + value[0] + '</div>');
+                            // console.log(value);
+                        })
+                    }
+                });
+
+            });
+        });
+    </script>
+@endpush
