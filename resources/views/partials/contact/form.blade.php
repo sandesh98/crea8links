@@ -105,7 +105,7 @@
                             </div>
 
                             <div class="col-12">
-                                <button type="submit" id="submit" class="btn"><span>Versturen</span></button>
+                                    <button type="submit" id="submit" class="btn d-flex align-items-center"><span>Versturen</span></button>
                             </div>
                         </div>
                         <div class="form-response"></div>

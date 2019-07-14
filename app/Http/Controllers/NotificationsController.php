@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\AppointmentReceived;
+use App\Mail\FormMessage;
 use App\Notification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -22,7 +22,7 @@ class NotificationsController extends Controller
 
         $notification = Notification::create($request->all());
 
-        Mail::to('sandeshb981@gmail.com')->send(new AppointmentReceived($notification));
+        Mail::to('sandeshb981@gmail.com')->send(new FormMessage($notification));
 
         return response()->json('Bericht verzonden!', 200);
     }

@@ -8,7 +8,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class AppointmentReceived extends Mailable
+class FormMessage extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -17,7 +17,7 @@ class AppointmentReceived extends Mailable
     /**
      * Create a new message instance.
      *
-     * @param Notification $notification
+     * @param $notification
      */
     public function __construct(Notification $notification)
     {
@@ -31,6 +31,6 @@ class AppointmentReceived extends Mailable
      */
     public function build()
     {
-        return $this->markdown('mail.AppointmentReceived');
+        return $this->markdown('mail.formMessage');
     }
 }
