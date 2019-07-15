@@ -74,4 +74,8 @@ h1 > span {
     fill: currentColor;
 }
 
+a:hover {
+    color: #f20117;
+}
+
 

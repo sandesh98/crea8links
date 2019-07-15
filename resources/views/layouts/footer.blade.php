@@ -147,7 +147,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="copyright-text text-center">
-                        <span><a href="#">{{ env('APP_NAME') }}</a> &copy; Copyright 2019.All rights reserved.</span>
+                        <span><a href="{{ route('home.index') }}">{{ config('app.name') }}</a> &copy; Copyright {{ \Carbon\Carbon::now()->year }}. All rights reserved.</span>
                     </div>
                 </div>
             </div>
