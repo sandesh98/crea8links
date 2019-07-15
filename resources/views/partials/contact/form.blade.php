@@ -163,12 +163,8 @@
                             if ($('#' + key).hasClass('is-invalid')) {
                                 return false;
                             }
-                            $('.contact-form input[name="' + key + '"]').addClass('is-invalid')
+                            $('.contact-form input[name="' + key + '"], textarea[name="' + key + '"]').addClass('is-invalid')
                                 .after('<div class="invalid-feedback">' + value[0] + '</div>');
-
-                            $('.contact-form textarea[name="' + key + '"]').addClass('is-invalid')
-                                .after('<div class="invalid-feedback">' + value[0] + '</div>');
-                            // console.log(value);
 
                              $("input, textarea").focus(function(){
                                 $(this).next('div').remove();
