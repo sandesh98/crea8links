@@ -105,14 +105,6 @@
                             <P>Cuteness you exquisite ourselves now end
                                 forfeited. Enquire ye without it garrets himself. Interest our nor received followed
                                 was.</P>
-
-                            <form action="https://themelooks.us13.list-manage.com/subscribe/post?u=79f0b132ec25ee223bb41835f&amp;id=f4e0e93d1d" method="post" name="mc-embedded-subscribe-form" target="_blank" class="newsletter-form">
-                                <div class="theme-input-group">
-                                    <input type="text" placeholder="Your Email">
-                                    <button type="submit"><i class="fa fa-paper-plane-o"
-                                                             aria-hidden="true"></i></button>
-                                </div>
-                            </form>
                         </div>
                     </div>
                     <!-- Widget Newsletter End -->
@@ -122,12 +114,6 @@
                         <ul class="social_icon_list list-inline">
                             <li>
                                 <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>

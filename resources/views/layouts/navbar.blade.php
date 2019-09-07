@@ -21,14 +21,18 @@
                             <li class="{{ Route::is('home.index') ? 'current-menu-parent' : '' }}">
                                 <a href="{{ route('home.index') }}">Home</a>
                             </li>
-                            <li class="{{ Route::is('service.index') ? 'current-menu-parent' : '' }}">
-                                <a href="{{ route('service.index') }}">Diensten</a>
-                            </li>
-                            <li class="{{ route::is('project.index') ? 'current-menu-parent' : '' }}">
-                                <a href="{{ route('project.index') }}">Projecten</a>
-                            </li>
+{{--                            <li class="{{ Route::is('service.index') ? 'current-menu-parent' : '' }}">--}}
+{{--                                <a href="{{ route('service.index') }}">Diensten</a>--}}
+{{--                            </li>--}}
+{{--                            <li class="{{ route::is('project.index') ? 'current-menu-parent' : '' }}">--}}
+{{--                                <a href="{{ route('project.index') }}">Projecten</a>--}}
+{{--                            </li>--}}
                             <li class="{{ Route::is('contact.index') ? 'current-menu-parent' : '' }}">
                                 <a href="{{ route('contact.index') }}">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="banner-btn btn"><span>influencers</span></a>
                             </li>
                         </ul>
                     </div>

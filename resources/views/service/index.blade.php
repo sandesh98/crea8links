@@ -195,49 +195,6 @@
     </section>
     <!-- Service End -->
 
-    <!-- Counter Begin -->
-    <section class="pt-120 pb-70 gradient-bg">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Single Counter -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-counter text-center text-white">
-                        <h2 class="count"><span>15</span></h2>
-                        <p>Years of experience</p>
-                    </div>
-                </div>
-                <!-- End Single Counter -->
-
-                <!-- Single Counter -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-counter text-center text-white">
-                        <h2 class="count"><span>1250</span>+</h2>
-                        <p>Happy Clients</p>
-                    </div>
-                </div>
-                <!-- End Single Counter -->
-
-                <!-- Single Counter -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-counter text-center text-white">
-                        <h2 class="count"><span>1</span>k+</h2>
-                        <p>Project Done</p>
-                    </div>
-                </div>
-                <!-- End Single Counter -->
-
-                <!-- Single Counter -->
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-counter text-center text-white">
-                        <h2 class="count"><span>100</span>+</h2>
-                        <p>Giving Consultancy</p>
-                    </div>
-                </div>
-                <!-- End Single Counter -->
-            </div>
-        </div>
-    </section>
-    <!-- Counter End -->
 
     <!-- Testimonial Begin -->
     <section class="pt-120 pb-120 section-pattern" data-bg-img="{{ asset('img/section-pattern/testimonial-pattern.png') }}">
