@@ -31,7 +31,7 @@
                                 <a href="{{ route('contact.index') }}">Contact</a>
                             </li>
                             <li>
-                                <a href="#" class="banner-btn btn" style="line-height: 52px"><span>influencers</span></a>
+                                <a href="{{ route('influencer.index') }}" class="banner-btn btn" style="line-height: 52px"><span>influencers</span></a>
                             </li>
                         </ul>
                     </div>

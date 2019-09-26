@@ -11,14 +11,17 @@
 |
 */
 
-Route::get('/', 'HomeController@index')->name('home.index');
-Route::get('/contact', 'ContactController@index')->name('contact.index');
-Route::get('/diensten' , 'ServiceController@index')->name('service.index');
+Route::get('/', 'HomeController')->name('home.index');
+Route::get('/contact', 'ContactController')->name('contact.index');
+Route::get('/diensten' , 'ServiceController')->name('service.index');
 
-Route::get('/projecten', 'ProjectController@index')->name('project.index');
+Route::get('/projecten', 'ProjectController')->name('project.index');
 Route::get('/projecten/example', 'ProjectController@example')->name('project.example');
 
 Route::post('/', 'NotificationsController@store')->name('notification.store');
+
+
+Route::get('/influencer', 'Influencer\HomeController')->name('influencer.index');
 
 Route::get('/demo', function () {
     $notification = \App\Notification::first();
