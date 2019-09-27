@@ -35,7 +35,7 @@
                                     <a href="{{ route('home.index') }}" class="banner-btn btn" style="line-height: 52px"><span>Bezoeker</span></a>
                                     @else
                                     <a href="{{ route('influencer.index') }}" class="banner-btn btn" style="line-height: 52px"><span>influencers</span></a>
-                                @endif 
+                                @endif
                             </li>
                         </ul>
                     </div>

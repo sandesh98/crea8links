@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="133b44d4-4e46-4148-8d02-5054c67c86db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/influencer/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/influencer/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -195,7 +195,7 @@
       <workItem from="1567875508876" duration="1307000" />
       <workItem from="1569050416848" duration="855000" />
       <workItem from="1569478952519" duration="731000" />
-      <workItem from="1569605880866" duration="461000" />
+      <workItem from="1569605880866" duration="802000" />
     </task>
     <task id="LOCAL-00001" summary="renamed some classes for sending notification via website">
       <created>1563106000809</created>
