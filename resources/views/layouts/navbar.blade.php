@@ -31,7 +31,11 @@
                                 <a href="{{ route('contact.index') }}">Contact</a>
                             </li>
                             <li>
-                                <a href="{{ route('influencer.index') }}" class="banner-btn btn" style="line-height: 52px"><span>influencers</span></a>
+                                @if(Route::is('influencer.*'))
+                                    <a href="{{ route('home.index') }}" class="banner-btn btn" style="line-height: 52px"><span>Bezoeker</span></a>
+                                    @else
+                                    <a href="{{ route('influencer.index') }}" class="banner-btn btn" style="line-height: 52px"><span>influencers</span></a>
+                                @endif 
                             </li>
                         </ul>
                     </div>
